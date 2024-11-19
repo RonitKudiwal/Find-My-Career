@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Find My Career</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="C:\Users\pc\Pictures\FMC Logo.jpg" width="100" height="80" alt="Find My Career Logo">
+            <img src="C:\Users\pc\Pictures\FMC Logo.jpg" alt="Find My Career Logo">
         </div>
         <nav>
             <ul>
@@ -30,22 +30,29 @@
     <section class="contact">
         <h1>Contact Us</h1>
         <form id="contact-form">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" required>
+            <p><label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required></p>
 
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" required>
+            <p><label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required></p>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <p><label for="email">Email:</label>
+                <input type="email" id="email" name="email" required></p>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <p><label for="password">Password:</label>
+                <input type="password" id="password" name="password" required></p>
 
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
+            <p><label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required></p>
 
-            <button type="submit">Register</button>
+            <div class="gender">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+
+                <button type="submit">Register</button>
+            </div>
 
         </form>
     </section>
