@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Tests - Find My Career</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function oncheck() {
+            var div = document.getElementById("start-test");
+            var form = document.getElementById("form_fillup")
+            if (div.style.display === "none") {
+                div.style.display = "block";
+                form.style.display = "none"
+            } else {
+                div.style.display = "none";
+                form.style.display = "block"
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -30,7 +43,10 @@
     <section class="career-tests">
         <h1>Career Assessments</h1>
         <p>Take our free career tests to discover your interests, skills, and potential career paths.</p>
-        <button id="start-test" onclick="startTest()">Start Test</button>
+        <button id="start-test" onclick="oncheck()">Start Test</button>
+        <div id="form_fillup" style="display: none;">
+            form will be here chekcing
+        </div>
     </section>
 
     <!-- Footer -->
